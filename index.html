@@ -15,7 +15,9 @@
     <script src="https://kit.fontawesome.com/5a284e9c06.js" crossorigin="anonymous"></script>
 
     <!-- Tailwind CDN -->
-     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
 
      <!-- css link -->
       <link rel="stylesheet" href="style.css">
@@ -24,7 +26,7 @@
    <!-- header -->
     <header>
          <!-- Navigation -->
-            <nav>
+            <nav class="hidden">
                 <div class="nav-container">
                     <h3 class="logo"><a href="#home">Rone<span class="text-green-500">_y</span></a></h3>
                     <ul class="nav-links">
@@ -46,6 +48,57 @@
                     </ul>
                 </div>
             </nav>
+
+
+             <!-- Navbar Start -->
+            <nav class="dark:bg-[#1e2a3e]">
+                <div class="av-container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+                
+                <!-- Logo -->
+                <h3 class="logo text-xl font-bold text-white dark:text-white">
+                    <a href="#home">Rone<span class="text-green-500">_y</span></a>
+                </h3>
+
+                <div class="relative md:static">
+                    <!-- Toggle Button (Mobile) -->
+                <button id="menu-toggle" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="#" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+
+                <!-- Nav Links -->
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="nav-links absolute lg:static px-6 bg-slate-600 md:bg-none right-0 font-medium flex flex-col p-2  mt-2 border border-gray-600 rounded-md md:flex-row md:space-x-6 md:mt-0 md:border-0 dark:border-gray-700"> 
+                       <li>
+                            <a id="link-home" href="#home" class="active">Home</a>
+                        </li>
+
+                        <li>
+                            <a id="link-about" href="#about">About</a>
+                        </li>
+
+                        <li>
+                            <a id="link-work" href="#Project">Projects</a>
+                        </li>
+
+                        <li>
+                            <a id="link-contact" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+
+    
+
+
 
             <!-- Hero Section -->
             <section class="hero" id="home">
@@ -786,7 +839,7 @@
 
     <!-- footer -->
      <footer>
-          <section class="w-full bg-gradient-to-r from-[#2d3748] to-[#112548] rounded-lg mx-auto shadow-lg pt-28" id="contact">
+          <section class="w-full bg-gradient-to-r from-[#2d3748] to-[#112548] rounded-lg mx-auto shadow-lg pt-28 pb-8" id="contact">
                 <div class="mx-auto max-w-screen-lg w-[90%] sm:w-[88%]">
                     <div class="flex flex-col gap-y-6">
                         <div class="flex flex-col gap-6 md:flex-row md:items-center"><svg xmlns="http://www.w3.org/2000/svg"
@@ -1011,5 +1064,15 @@
         });
 
     </script>
+
+    <!-- JavaScript for Toggle -->
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('navbar-default');
+
+    toggleBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
