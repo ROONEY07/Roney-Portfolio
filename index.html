@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
 
     <!-- Font awsome CDN -->
     <link rel="stylesheet" href="style/style.css">
@@ -17,7 +19,28 @@
     <!-- Tailwind CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+     
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: 
+                {
+                    colors: 
+                    {
+                        'custom-color': '#123456',
+                        'bike-btn-color': '#E76F51',
+                    },
+                    fontFamily: 
+                    {
+                        signature: ['"Great Vibes"', 'cursive'],
+                    }
 
+                }
+
+                
+            }
+        }
+    </script>
 
      <!-- css link -->
       <link rel="stylesheet" href="style.css">
@@ -60,9 +83,16 @@
                 <div class="av-container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
                 
                 <!-- Logo -->
-                <h3 class="logo text-xl font-bold text-white dark:text-white">
+                <h3 class="logo text-xl font-bold text-white dark:text-white hidden">
                     <a href="#home">Rone<span class="text-green-500">_y</span></a>
                 </h3>
+
+                <!-- Logo -->
+                <h3 class="logo text-2xl font-bold text-white dark:text-white">
+                    <a href="#home" class="font-signature relative">Roney</a>
+                    <a href="#home" class="font-signature absolute left-[160px] top-8"><h6><span class="text-orange-500">H</span>ossain</h6></a>
+                </h3>
+
 
                 <div class="relative md:static">
                     <!-- Toggle Button (Mobile) -->
