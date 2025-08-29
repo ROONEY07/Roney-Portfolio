@@ -175,10 +175,10 @@
       <!-- Stretchy Navigation Ends -->
    </header>
    
-   <!-- main -->
+    <!-- main -->
     <main>
-        <!-- About section -->
-             <section class="w-full bg-gradient-to-r from-[#2d3748] to-[#2a4574] rounded-lg mx-auto shadow-lg" id="about">
+        <!-- About section 1-->
+             <section class="w-full bg-gradient-to-r from-[#2d3748] to-[#2a4574] rounded-lg mx-auto shadow-lg hidden" id="about">
 
                  <div class="flex flex-col md:flex-row w-full gap-8 md:gap-12 justify-center items-start p-8 mx-auto pt-20">
     
@@ -261,14 +261,88 @@
 
              </section>
         
-        <!-- Edutaional Section -->
-             <section class="w-full bg-gradient-to-r from-[#2d3748] to-[#112548] rounded-lg mx-auto shadow-lg pb-20 hidden">
+        <!-- About section 2-->
+              <section class="from-[#2d3748] to-[#2a4574]  p-6 pt-32 md:pt-48">
+                <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-start gap-12">
+                    
+                    <!-- Left Side Image with Black Background -->
+                    <div class="relative w-full md:w-1/2">
+                    <!-- Black background box (behind image) -->
+                    <div class="bg-[#1e453e] w-full h-full absolute -top-28 right-28 translate-y-6 translate-x-6 z-0 rounded-md"></div>
 
-                 <div class="flex flex-col md:flex-row w-full gap-8 md:gap-6 justify-center items-start p-8 mx-auto pt-20">
-    
+                    <!-- Image (in front of black box) -->
+                    <div class="relative z-1 rounded-md overflow-hidden shadow-lg bg-[#1e2a3a]">
+                        <img src="images/pic6.png" alt="About Image" class="w-full h-auto object-cover rounded-md">
+                    </div>
+                    </div>
+
+                    <!-- Right Side Content -->
+                    <div class="w-full md:w-1/2">
+                    <h2 class="text-4xl font-semibold uppercase tracking-wider text-white mb-4">About <span class="text-green-500">Me</span></h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets clients' requirements is my motto. 
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        I aspire to work in a collaborative environment where I can grow continuously and solve challenging problems. 
+                    </p>
+
+                    <!-- Additional Information -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-xl pt-8">
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-map text-white text-sm"></i>
+                            <p class="text-white">Location:</p>
+                            <p class="text-gray-400">Dhaka, BD</p>
+                        </div>
+
+                        <div class="flex items-center gap-4 text-sm">
+                            <i class="fa-regular fa-flag text-white"></i>
+                            <p class="text-white">Nationality:</p>
+                            <p class="text-gray-400">Bengali / Bangladesh</p>
+                        </div>
+
+                        <div class="flex items-center gap-4 text-sm">
+                            <i class="fa-solid fa-graduation-cap text-white"></i>
+                            <p class="text-white">Study:</p>
+                            <p class="text-gray-400">Bangladesh University</p>
+                        </div>
+
+                        <div class="flex items-center gap-4 text-sm">
+                            <i class="fa-solid fa-hourglass-start"></i>
+                            <p class="text-white">Age:</p>
+                            <p class="text-gray-400">26</p>
+                        </div>
+
+                        <div class="flex items-center gap-4 text-sm">
+                            <i class="fa-regular fa-snowflake"></i>
+                            <p class="text-white">Interests:</p>
+                            <p class="text-gray-400">Coding, Problem Solving, Traveling</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Signature / Name -->
+                    <p class="text-sm font-semibold text-white uppercase mb-4 pt-11">— Everenne</p>
+
+                    <!-- Social Icons -->
+                    <div class="flex gap-4 text-gray-400">
+                        <a href="#"><i class="fab fa-facebook-f hover:text-green-500"></i></a>
+                        <a href="#"><i class="fab fa-twitter hover:text-green-500"></i></a>
+                        <a href="#"><i class="fab fa-instagram hover:text-green-500"></i></a>
+                    </div>
+                    </div>
+
+                </div>
+                </section>
+
+        <!-- About section 3-->
+             <section class="w-full bg-gradient-to-r from-[#2d3748] to-[#112548] mx-auto pb-20 hidden">
+
+                 <div class="flex flex-col md:flex-row w-full gap-8 md:gap-6 p-8 mx-auto pt-20">
+
                         <!-- about skill -->
                         <div class="flex flex-col w-full md:w-[20%] mt-11 pl-44 pt-4">
-                            <div class="avatar">
+                            <div class="avatar hidden md:block">
                                 <div class="w-44 rounded-lg">
                                     <img src="images/pic1.jpeg" class="rounded-lg"/>
                                 </div>
@@ -321,7 +395,9 @@
 
              </section>
 
-             <section class="w-full bg-gradient-to-r from-[#2d3748] to-[#2a4574] rounded-lg mx-auto shadow-lg pt-28 pb-20">
+
+             <!-- Educational Section -->
+             <section class="w-full  from-[#2d3748] to-[#2a4574] rounded-lg mx-auto shadow-lg pt-28 pb-20">
                     <div class="mx-auto max-w-screen-lg">
                         
                         <div class="flex flex-col divide-y-2 divide-neutral-300">
